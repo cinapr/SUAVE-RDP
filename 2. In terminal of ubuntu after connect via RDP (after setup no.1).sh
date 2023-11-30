@@ -58,19 +58,29 @@ docker --version
 sudo apt install software-properties-common
 sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt-get update
-sudo apt install python3.9
+sudo apt-get install python3 python3-pip
+python -m pip install -–upgrade pip
 
-#install pip
-curl -sS https://bootstrap.pypa.io/get-pip.py | sudo python3.9 -m pip install --upgrade pip
+#verify python3
+python3 --version
+pip3 --version
 
-#verify
-python3.9 --version
-pip3.9 --version
+#install python3.9 and pip3.9
+#sudo apt install python3.9
+#curl -sS https://bootstrap.pypa.io/get-pip.py | sudo python3.9 -m pip install --upgrade pip
+
+#verify python3.9
+#python3.9 --version
+#pip3.9 --version
 
 #link python3.9 to python
-sudo ln -s "$(which python3.9)" /usr/bin/python
-ls -l /usr/bin/python
-python --version
+#sudo ln -s "$(which python3.9)" /usr/bin/python
+#ls -l /usr/bin/python
+#python --version
+
+#verify python
+#python --version
+#pip --version
 
 
 
